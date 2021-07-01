@@ -11,8 +11,8 @@ app.set('view engine', 'ejs');
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
-
-mongoose.connect("mongodb+srv://admin-annu:family2612@cluster0.wqtf9.mongodb.net/todolistDB?retryWrites=true&w=majority", {useNewUrlParser: true,useUnifiedTopology:true,useCreateIndex: true} );
+//add your username password
+mongoose.connect("mongodb+srv://YOURUSERNAME:PASSWORD@cluster0.wqtf9.mongodb.net/todolistDB?retryWrites=true&w=majority", {useNewUrlParser: true,useUnifiedTopology:true,useCreateIndex: true} );
 
 const itemsSchema = {
   name: String
